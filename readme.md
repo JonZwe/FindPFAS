@@ -8,7 +8,7 @@ data files). Its intended to be used for non-target screening for per-
 and polyfluoroalkyl substances (PFAS). FindPFΔS is provided both as
 Python source code and as Windows Application (.exe) with a graphical
 user interphase (GUI).\
-The executable version can be downloaded from Zenodo (Link) and can be
+The executable version can be downloaded from Zenodo (https://doi.org/10.5281/zenodo.6797354) and can be
 used independently of any programming language on a Windows computer.
 The GUI was programmed with PySimpleGUI and the full source code which
 was converted into an executable is also given.
