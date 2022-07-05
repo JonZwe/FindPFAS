@@ -5,7 +5,7 @@ FindPFΔS (FindPolyFluoroDeltas) is an open source Python based algorithm
 which can be used to extract high-resolution MS/MS spectra (HR-MS/MS)
 that comprise certain fragment mass differences of interest (MS2 raw
 data files). Its intended to be used for non-target screening for per-
-and polyfluoralkyl substances (PFAS). FindPFΔS is provided both as
+and polyfluoroalkyl substances (PFAS). FindPFΔS is provided both as
 Python source code and as Windows Application (.exe) with a graphical
 user interphase (GUI).\
 The executable version can be downloaded from Zenodo (Link) and can be
