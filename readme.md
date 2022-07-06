@@ -164,7 +164,7 @@ respective variables of the FindPFΔS source code are given in brackets.
     (https://comptox.epa.gov/dashboard/chemical-lists/PFASOECD).
     Further, it has to be specified (Radio button in GUI) whether the
     data was acquired in positive or negative ionization mode. Note that
-    either only \[M--H\]-- or \[M+H\]+ adducts can be considered. Also
+    either only \[M-H\]- or \[M+H\]+ adducts can be considered. Also
     the mass tolerance has to be defined.\
     (file\_susp\_list = False)\
     (tol\_suspects = 0.002)\
