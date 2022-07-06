@@ -121,6 +121,9 @@ respective variables of the FindPFΔS source code are given in brackets.
 
 ### Parameters for Kendrick mass defect analysis (homologous series)
 
+-   Homologous series analysis will use the same repeating units as specified
+    under fragment differences (e.g. CF2, CF2O or 115.9885)
+
 -   Decision whether the MS1 masses should be screened for abundant
     repeating units (false (unchecked) by default; Note: If checked, the
     runtime can increase drastically).\
@@ -132,6 +135,25 @@ respective variables of the FindPFΔS source code are given in brackets.
 
 -   Minimum number of homologues to be assigned as a series.\
     (n\_min = 3)
+    
+-   The output file is a KMD vs. m/z plot for visual inspection and 
+    a [CF2]_homologous_series.xls file for in-depth analysis of homologous series.
+    In the KMD plot, homologous series that have more homologues than specified
+    in n_min are color coded based on the normalized retention time within their
+    homologous series.
+    The [CF2]_homologous_series.xls output file consists of a list with following entries:
+
+	* Column A (number): numbering of features
+	* m/z: measured m/z value by the instrument
+	* RT: measured RT
+	* mod: modulo, m/z mod [mass of repeating unit]
+	* KMD: Kendrick mass defect
+	* HS Number: Numbering of different homologous series. All the features with an identical HS Number vary by the mass of the repeating unit.
+	* Homologoues: Number of features in the homologous series
+	* Unique Homologues: Number of features in the homologous series, corrected for multiple entries of the same masses (e.g. a double integration of a split peak can lead to two features)
+	* min Homologues: TRUE if Unique Homologues > n_min
+	* Confirmed by MSMS: TRUE if also confirmed by fragment differences
+
 
 ### Optional: Parameters for suspect screening and diagnostic fragment screening
 
