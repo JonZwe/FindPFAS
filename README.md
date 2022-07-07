@@ -4,7 +4,7 @@ FindPFΔS
 FindPFΔS (FindPolyFluoroDeltas) is an open source Python based algorithm
 which can be used to extract high-resolution MS/MS spectra (HR-MS/MS)
 that comprise certain fragment mass differences of interest (MS2 raw
-data files). Its intended to be used for non-target screening for per-
+data files). It is intended to be used for non-target screening for per-
 and polyfluoroalkyl substances (PFAS). FindPFΔS is provided both as
 Python source code and as Windows Application (.exe) with a graphical
 user interphase (GUI).\
@@ -16,9 +16,9 @@ was converted into an executable is also given.
 Publication:\
 Zweigle, J., Bugsel, B., Zwiener, C. (2022). "FindPFΔS: Non-target
 screening for PFAS -- Comprehensive data mining for MS2 fragment mass
-differences" submitted to Anal Chem
+differences" submitted to Analytical Chemistry
 
-For further and more detailed information on functionality of FindPFΔS,
+For further and more detailed information on the functionality of FindPFΔS,
 graphical user interface (GUI), output, and general recommendations also
 refer to the publication and its Supporting Information.\
 In case of questions regarding FindPFΔS: jozweigle\@gmail.com
@@ -47,17 +47,17 @@ respective variables of the FindPFΔS source code are given in brackets.
         data with the 'peak picking' function of MSConvert.
     2)  It is recommended to use FindPFΔS with only one collision energy
         (or e.g. one linear formula). If multiple collision energies
-        were acquired each collision energy can be separatly converted
+        were acquired each collision energy can be separately converted
         to one MS2-file by using the 'subset' function of MSConvert.\
         (full\_path =
         'TestSample\_PFAS\_Standard\_MIX\_ddMS2\_20eV\_Inj5.ms2')
 
--   After choosing a datafile of interest, the fragment differences can
+-   After choosing a data file of interest, the fragment differences can
     be specified (e.g. CF2). Several differences can be specified at the
     same time. Note: Besides chemical formulae also exact masses can be
     used. In the GUI the input values have to be space separated. It is
     recommended to start by using only one difference per run to keep
-    the results simple (and avoid to high false positive rates) in the
+    the results simple (and avoid high false positive rates) in the
     beginning and to later use multiple differences.\
     (frags = \['CF2', 'C2F4', 'HF'\])
 
@@ -73,14 +73,14 @@ respective variables of the FindPFΔS source code are given in brackets.
     (tol = 0.001)
 
 -   Next, the intensity threshold for fragments that should be
-    considered can be choosen: (absolute or relative, in the GUI
+    considered can be chosen: (absolute or relative, in the GUI
     specified by Radio button). If the noise threshold of typical MS/MS
-    spectra is known, absolute thresholds can have advantages, otherwise
-    relative thresholds should be choosen.\
+    spectra is known, absolute thresholds can have advantages, otherwise, 
+    relative thresholds should be chosen.\
     (I\_min = 5)\
     (rel\_intens = True)
 
--   In the next field the mass tolerance (Da) to remove persistent
+-   In the next field, the mass tolerance (Da) to remove persistent
     background precursor masses that are triggered n-times for MS/MS can
     be set (see also next point).\
     (tol\_multiples = 0.002)
@@ -88,8 +88,8 @@ respective variables of the FindPFΔS source code are given in brackets.
 -   Number n above which precursor masses are excluded from data
     evaluation (e.g. if a compound is triggered 20 times for MS/MS it is
     likely a background signal without a peak shape) Note: The number 20
-    is choosen arbitrarily. It strongly depends on the method parameters
-    and the chromatograpic method. In cases where the focus is on high
+    is chosen arbitrarily. It strongly depends on the method parameters
+    and the chromatographic method. In cases where the focus is on high
     quality spectra and the instrument algorithm collects many spectra
     over a broad peak the number should be set rather high in the first
     place. If only e.g. \< 3 spectra over a peak are measured a number
@@ -99,7 +99,7 @@ respective variables of the FindPFΔS source code are given in brackets.
 -   Decision whether the two above mentioned criteria should be applied.
     If true (checked in GUI), multiple spectra from identical precursor
     masses are collected and only the spectrum with the highest
-    precursor intensity will used for further evaluation (e.g. if a
+    precursor intensity will be used for further evaluation (e.g. if a
     chromatographic peak has 5 MS/MS scans only the spectrum with the
     highest precursor intensity is extracted) Note: If unchecked, data
     evaluation will take much more time because every single
@@ -109,19 +109,19 @@ respective variables of the FindPFΔS source code are given in brackets.
 
 -   Specification of sorting criteria (Radio button in GUI). It can be
     specified how the output data should be sorted (either by precursor
-    intensity or number of fragments found positive). Both figures of
+    intensity or the number of fragments found positive). Both figures of
     spectra as well as the Excel output table
     'Results\_differences.xlsx' are sorted.\
     (sort\_intens = True)\
     (sort\_number = False)
 
--   Specifiy how many of the spectra with mass differences should be
+-   Specify how many of the spectra with mass differences should be
     plotted.\
     (plot\_num = 20)
 
 ### Parameters for Kendrick mass defect analysis (homologous series)
 
--   Homologous series analysis will use the same repeating units as specified
+-   The homologous series analysis will use the same repeating units as specified
     under fragment differences (e.g. CF2, CF2O or 115.9885)
 
 -   Decision whether the MS1 masses should be screened for abundant
@@ -139,9 +139,9 @@ respective variables of the FindPFΔS source code are given in brackets.
 -   The output file is a KMD vs. m/z plot for visual inspection and 
     a [CF2]_homologous_series.xls file for in-depth analysis of homologous series.
     In the KMD plot, homologous series that have more homologues than specified
-    in n_min are color coded based on the normalized retention time within their
+    in n_min are color-coded based on the normalized retention time within their
     homologous series.
-    The [CF2]_homologous_series.xls output file consists of a list with following entries:
+    The [CF2]_homologous_series.xls output file consists of a list with the following entries:
 
 	* Column A (number): numbering of features
 	* m/z: measured m/z value by the instrument
@@ -164,7 +164,7 @@ respective variables of the FindPFΔS source code are given in brackets.
     (https://comptox.epa.gov/dashboard/chemical-lists/PFASOECD).
     Further, it has to be specified (Radio button in GUI) whether the
     data was acquired in positive or negative ionization mode. Note that
-    either only \[M-H\]- or \[M+H\]+ adducts can be considered. Also
+    either only \[M-H\]- or \[M+H\]+ adducts can be considered. Also, 
     the mass tolerance has to be defined.\
     (file\_susp\_list = False)\
     (tol\_suspects = 0.002)\
@@ -179,12 +179,12 @@ respective variables of the FindPFΔS source code are given in brackets.
 
 -   When all mandatory parameters are specified, data evaluation with
     FindPFΔS can be started. It will generate a folder named after the
-    sample. In this folder several Excel files with the results will be
+    sample. In this folder, several Excel files with the results will be
     saved. Furthermore, a 'plots' folder is generated within the results
     folder with the generated figures.
 
 Call for Contributions
 ----------------------
 
-We appreciate help and suggestions from other reseachers to improve
+We appreciate help and suggestions from other researchers to improve
 FindPFΔS. Please don't hesitate to contact us.
