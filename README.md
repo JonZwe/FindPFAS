@@ -27,7 +27,13 @@ General information:
 --------------------
 
 FindPFΔS was written in Python 3.9.7 and requires several Python
-packages that can be found in the main script. In the following, the raw
+packages that can be found in the requirements.txt file. They can be automatically be installed by typing the following to the console:
+
+```
+pip install -r requirements.txt
+```
+
+In the following, the raw
 data input and parameters that need to be specified for data evaluation
 are briefly discussed. After explanation of each parameter, the
 respective variables of the FindPFΔS source code are given in brackets.
