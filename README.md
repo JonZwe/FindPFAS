@@ -13,10 +13,8 @@ used independently of any programming language on a Windows computer.
 The GUI was programmed with PySimpleGUI and the full source code which
 was converted into an executable is also given.
 
-Publication:\
-Zweigle, J., Bugsel, B., Zwiener, C. (2022). "FindPFΔS: Non-target
-screening for PFAS -- Comprehensive data mining for MS2 fragment mass
-differences" submitted to Analytical Chemistry
+If you use FindPFΔS please cite:\
+Zweigle, J.; Bugsel, B.; Zwiener, C., FindPFΔS: Non-Target Screening for PFAS─Comprehensive Data Mining for MS2 Fragment Mass Differences. Analytical Chemistry 2022.
 
 For further and more detailed information on the functionality of FindPFΔS,
 graphical user interface (GUI), output, and general recommendations also
