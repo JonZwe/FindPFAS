@@ -15,6 +15,7 @@ was converted into an executable is also given.
 
 If you use FindPFΔS please cite:\
 Zweigle, J.; Bugsel, B.; Zwiener, C., FindPFΔS: Non-Target Screening for PFAS─Comprehensive Data Mining for MS2 Fragment Mass Differences. Analytical Chemistry 2022.
+(https://pubs.acs.org/doi/full/10.1021/acs.analchem.2c01521)
 
 For further and more detailed information on the functionality of FindPFΔS,
 graphical user interface (GUI), output, and general recommendations also
