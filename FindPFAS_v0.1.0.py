@@ -763,7 +763,7 @@ if screen_hs == True:
 
     count_arr = np.delete(count_hs, del_index)
     dist_hs_vec_corrected = np.delete(dist_hs_sorted, del_index)
-    avg_mass = np.asarray(avg_mass,dtype='object') ################## Error message????
+    avg_mass = np.asarray(avg_mass,dtype='object')
     np.delete(avg_mass, del_index)
 
     # Create Dataframe with detected repeating units
