@@ -2,7 +2,7 @@ FindPFΔS
 ========
 
 
-**NOTE: We have developed a new and more advanced tool for PFAS feature prioritization that includes the functionalities of FindPFΔS. It can be found here: https://github.com/JonZwe/PFAScreen**
+**NOTE: We have developed a new and more advanced tool for PFAS feature prioritization that includes the main functionalities of FindPFΔS. It can be found here: https://github.com/JonZwe/PFAScreen**
 
 
 FindPFΔS (FindPolyFluoroDeltas) is an open source Python based algorithm
